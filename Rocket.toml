@@ -1,2 +1,5 @@
+[default]
+template_dir = "static"
+
 [debug]
 port = 8008
