@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-</body>
-</html>
+{% extends "base" %}
+{% block index_content %}
+    <h1 class="text-3xl font-bold underline">Hello worldsss!</h1>
+    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message</p>
+    </div>
+    <button class="bg-sky-500 hover:bg-sky-700 ...">
+        Save changes
+    </button>
+    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+        Save changes
+    </button>
+{% endblock index_content %}
